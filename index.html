@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="KC Naturalis — plantas, aromatizantes, velas e presentes artesanais. Descubra as coleções e contacte-nos pelo WhatsApp.">
+  <title>KC Naturalis | Plantas, Aromatizantes & Velas Artesanais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#f8f5ed;--paper:#fffdf8;--olive:#394a2a;--leaf:#677854;--ink:#2c3326;--muted:#73796d;--gold:#aa8a51;--line:#e5dfd1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 'DM Sans',Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;letter-spacing:-.045em}h1,h2,h3,p{margin-top:0}.small{font-size:.75rem;text-transform:uppercase;letter-spacing:.21em;font-weight:700;color:var(--gold)}
+    .strip{background:var(--olive);text-align:center;color:#f4eee1;padding:8px 14px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}.wordmark{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;line-height:1;white-space:nowrap}.wordmark b{font-style:italic;font-weight:400;color:var(--leaf)}.nav nav{display:flex;gap:28px;font-size:.82rem;font-weight:700}.nav nav a:hover{color:var(--gold)}.nav-contact{border:1px solid var(--olive);padding:11px 19px;border-radius:100px;font-size:.79rem;font-weight:700;white-space:nowrap}.nav-contact:hover{background:var(--olive);color:white}
+    .hero{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.hero-inner{display:grid;grid-template-columns:1fr 1.02fr;min-height:620px}.hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:75px 5vw 75px max(24px,calc((100vw - 1240px)/2))}.hero h1{font-size:clamp(3.8rem,6.1vw,6.8rem);line-height:1.07;margin:24px 0 25px}.hero h1 em{color:var(--leaf);font-weight:400}.hero-copy p{max-width:470px;color:#646b5e;line-height:1.85;margin-bottom:30px}.button{background:var(--olive);color:white;border-radius:100px;padding:15px 24px;display:inline-flex;align-items:center;gap:19px;font-size:.82rem;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#647952}.button.light{background:var(--paper);color:var(--olive)}.button.light:hover{background:#eee8d9}.hero-image{position:relative;overflow:hidden;background:#b5a78c}.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center 52%;position:absolute;inset:0}.image-note{position:absolute;bottom:22px;right:22px;padding:8px 12px;background:rgba(255,253,248,.88);font-size:.7rem;letter-spacing:.08em}
+    .category-nav{display:flex;gap:12px;flex-wrap:wrap;padding-top:28px;padding-bottom:29px;border-bottom:1px solid var(--line)}.category-nav a{border:1px solid #cdd3c4;border-radius:100px;padding:9px 17px;font-size:.82rem;font-weight:700}.category-nav a:hover{background:var(--olive);color:white}
+    .category{padding-top:95px;padding-bottom:98px;scroll-margin-top:20px}.category + .category{border-top:1px solid var(--line)}.category.alt{background:#ecede3}.category-head{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:30px}.category-head h2{font-size:clamp(3rem,5vw,5.6rem);line-height:1.1;margin:12px 0 0}.category-head h2 em{color:var(--leaf)}.category-head p{max-width:360px;color:var(--muted);margin:0}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.photo-card{background:var(--paper);border:1px solid var(--line);overflow:hidden}.photo-frame{aspect-ratio:1 / 1.08;background:#eeece4;overflow:hidden}.photo-frame img{width:100%;height:100%;object-fit:contain;display:block}.photo-card.shot img{object-fit:cover;object-position:center 50%}.photo-card.lavanda img{object-position:center 61%}.photo-card.box img{object-position:center 38%}.photo-card.promo img{object-fit:contain}.photo-card.wide img{object-fit:contain}.photo-caption{padding:15px 18px 17px;min-height:72px}.photo-caption h3{font-family:'DM Sans',Arial,sans-serif;font-size:.93rem;font-weight:700;letter-spacing:0;margin:0}.photo-caption p{font-size:.79rem;color:var(--muted);margin:2px 0 0}.category-action{margin-top:31px}
+    .story{background:#e8eadf}.story-inner{display:grid;grid-template-columns:1fr 1fr;min-height:520px}.story-photo{position:relative;overflow:hidden;background:#d2d3c9}.story-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;object-position:center 38%}.story-text{padding:70px 8vw;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.story h2{font-size:clamp(3.1rem,5vw,5.7rem);line-height:1.13;margin:20px 0 23px}.story h2 em{color:var(--leaf)}.story p{color:#646e60;max-width:480px;line-height:1.9;margin-bottom:30px}
+    .contact{padding-top:105px;padding-bottom:110px;text-align:center}.contact h2{font-size:clamp(3rem,5vw,5.8rem);line-height:1.12;margin:20px auto}.contact h2 em{color:var(--leaf)}.contact p{max-width:610px;color:var(--muted);margin:0 auto 30px}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.contact-links .outline{background:transparent;color:var(--olive);border:1px solid var(--olive)}.contact-links .outline:hover{background:#eee9db}
+    footer{background:var(--olive);color:#f8f5ed}.footer-inner{padding-top:55px;padding-bottom:55px;display:flex;justify-content:space-between;align-items:end;gap:25px}.footer-inner .wordmark b{color:#d8dfc6}.footer-inner p{color:#d3dbc8;max-width:420px;margin:15px 0 0;font-size:.84rem}.footer-links{text-align:right;font-size:.82rem;line-height:2}.footer-links a{text-decoration:underline;text-underline-offset:4px}
+    @media(max-width:980px){.nav nav{display:none}.hero-inner{grid-template-columns:1fr 1fr;min-height:560px}.hero-copy{padding:65px 32px}.hero h1{font-size:clamp(3.5rem,6vw,5rem)}.story-text{padding:60px 40px}}
+    @media(max-width:700px){.wrap{width:calc(100% - 38px)}.nav{height:72px}.wordmark{font-size:1.52rem}.nav-contact{font-size:.7rem;padding:9px 11px}.hero-inner,.story-inner{grid-template-columns:1fr}.hero-copy{padding:65px 22px 57px}.hero h1{font-size:clamp(3.5rem,13vw,5rem)}.hero-image{height:400px}.category-nav{gap:8px}.category-nav a{font-size:.74rem;padding:8px 12px}.category{padding-top:72px;padding-bottom:78px}.category-head{display:block}.category-head p{margin-top:16px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo-caption{padding:11px 11px 15px;min-height:76px}.photo-caption h3{font-size:.82rem;line-height:1.35}.photo-caption p{font-size:.73rem}.story-photo{height:420px}.story-text{padding:65px 24px}.story h2{font-size:3.7rem}.contact{padding-top:80px;padding-bottom:85px}.footer-inner{display:block}.footer-links{text-align:left;margin-top:32px}}
+    @media(max-width:380px){.photo-grid{grid-template-columns:1fr}.photo-frame{aspect-ratio:1 / 1}.photo-caption{min-height:0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+    /* Galleries keep every photograph available while making each collection easy to browse. */
+    .photo-grid{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:2px;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#aab69d transparent;padding:3px 2px 16px;margin:0 -2px;-webkit-overflow-scrolling:touch}
+    .photo-card{flex:0 0 calc((100% - 36px)/3);scroll-snap-align:start;min-width:0;transition:transform .35s ease,box-shadow .35s ease;cursor:zoom-in}
+    .photo-card:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(44,51,38,.11)}
+    .photo-frame img{transition:transform .45s ease}.photo-card:hover .photo-frame img{transform:scale(1.035)}
+    .gallery-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 18px}.gallery-hint{color:var(--muted);font-size:.8rem}.gallery-actions{display:flex;gap:8px;align-items:center}.gallery-count{font-size:.8rem;font-weight:700;color:var(--olive);min-width:58px;text-align:center}.gallery-arrow{width:40px;height:40px;border-radius:50%;border:1px solid #bfc8b6;background:var(--paper);color:var(--olive);font:20px/1 'DM Sans',sans-serif;cursor:pointer;transition:background .2s,transform .2s}.gallery-arrow:hover:not(:disabled){background:var(--olive);color:white;transform:scale(1.06)}.gallery-arrow:disabled{opacity:.38;cursor:default}
+    .photo-card:focus-visible,.gallery-arrow:focus-visible,.viewer button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .photo-card.reveal-ready{opacity:0;transform:translateY(20px)}.photo-card.reveal-ready.in-view{opacity:1;transform:translateY(0)}
+    .viewer{border:0;padding:0;background:transparent;color:white;max-width:none;max-height:none;width:100vw;height:100dvh;overflow:hidden}.viewer::backdrop{background:rgba(16,25,17,.9)}.viewer[open]{display:grid;place-items:center;background:rgba(16,25,17,.96)}.viewer-shell{width:min(1100px,100vw);height:100%;display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding:16px 22px 22px;gap:10px}.viewer-top,.viewer-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px}.viewer-title{font-family:'Playfair Display',Georgia,serif;font-size:1.18rem}.viewer-close,.viewer-nav{border:1px solid #879181;border-radius:100px;background:transparent;color:white;cursor:pointer}.viewer-close{padding:9px 15px;font:600 .8rem 'DM Sans',sans-serif}.viewer-stage{min-height:0;display:flex;align-items:center;justify-content:center;gap:14px}.viewer-stage img{display:block;width:auto;height:auto;max-width:calc(100% - 110px);max-height:100%;object-fit:contain}.viewer-nav{flex:none;width:42px;height:42px;font-size:1.5rem}.viewer-count{color:#d9dfd3;font-size:.85rem}.viewer button:hover{background:#53684e}
+    @media(max-width:980px){.photo-card{flex-basis:calc((100% - 18px)/2)}}
+    @media(max-width:700px){.photo-grid{gap:12px;scroll-padding-inline:1px}.photo-card{flex-basis:78%;max-width:340px}.gallery-hint{font-size:.72rem}.gallery-arrow{width:38px;height:38px}.viewer-shell{padding:12px 9px 18px}.viewer-stage{gap:3px}.viewer-stage img{max-width:calc(100% - 76px)}.viewer-nav{width:34px;height:34px}}
+    @media(prefers-reduced-motion:reduce){.photo-grid{scroll-behavior:auto}.photo-card,.photo-frame img,.gallery-arrow{transition:none!important}.photo-card.reveal-ready{opacity:1;transform:none}}
+    .viewer-image-box{display:contents}
+    .typing-intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;overflow:hidden;isolation:isolate;background:radial-gradient(circle at 50% 45%,#18251b 0%,#0b110c 68%,#070b08 100%);color:#f7f4e9;text-align:center;transition:opacity .7s ease,visibility .7s ease}
+    .typing-intro::before,.typing-intro::after{content:"";position:absolute;inset:-24%;z-index:-1;pointer-events:none;will-change:transform}
+    .typing-intro::before{background:radial-gradient(ellipse 28% 36% at 22% 54%,rgba(81,126,86,.32),transparent 75%),radial-gradient(ellipse 32% 42% at 78% 28%,rgba(73,111,77,.24),transparent 72%),radial-gradient(ellipse 25% 31% at 68% 82%,rgba(156,126,66,.15),transparent 74%);filter:blur(30px);animation:ambientDrift 9s ease-in-out infinite alternate}
+    .typing-intro::after{background:radial-gradient(ellipse 16% 22% at 37% 30%,rgba(185,159,92,.13),transparent 75%),radial-gradient(ellipse 20% 28% at 65% 65%,rgba(92,137,102,.2),transparent 75%);filter:blur(42px);animation:ambientDriftReverse 12s ease-in-out infinite alternate}
+    .typing-intro.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+    .typing-inner{position:relative;z-index:1;width:min(900px,calc(100% - 40px));padding:40px 0;text-shadow:0 2px 22px rgba(0,0,0,.25)}
+    .typing-name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.7rem,10vw,8.5rem);line-height:1.1;letter-spacing:-.045em;min-height:1.12em;margin:0;white-space:nowrap}
+    .typing-tagline{min-height:2.4em;margin:22px 0 0;font-size:clamp(.95rem,2vw,1.25rem);letter-spacing:.09em;color:#dce6d7}
+    .typing-cursor{display:inline-block;width:2px;height:.8em;margin-left:5px;background:#d7bf8b;vertical-align:-.06em;animation:cursorBlink .7s step-end infinite}
+    .typing-cursor.is-hidden{visibility:hidden}
+    .typing-tagline .typing-cursor{height:1em;vertical-align:-.2em}
+    .intro-skip{position:absolute;z-index:2;right:clamp(18px,4vw,48px);top:clamp(18px,4vw,40px);background:transparent;border:1px solid #728172;border-radius:100px;padding:9px 17px;color:#dce6d7;font:600 .78rem 'DM Sans',Arial,sans-serif;cursor:pointer}.intro-skip:hover,.intro-skip:focus-visible{background:#dce6d7;color:#0b110c}
+    @keyframes cursorBlink{50%{opacity:0}}
+    @keyframes ambientDrift{from{transform:translate3d(-3%,-2%,0) scale(1) rotate(-4deg)}to{transform:translate3d(5%,4%,0) scale(1.15) rotate(5deg)}}
+    @keyframes ambientDriftReverse{from{transform:translate3d(4%,3%,0) scale(1.08)}to{transform:translate3d(-5%,-4%,0) scale(.94)}}
+    @media(max-width:700px){.typing-name{font-size:clamp(2.55rem,11vw,4.4rem)}.typing-tagline{letter-spacing:.025em}}
+    @media(prefers-reduced-motion:reduce){.typing-intro{display:none}.typing-intro::before,.typing-intro::after,.typing-cursor{animation:none}}
+    /* The education images are framed to show only the photographic region of each supplied screenshot. */
+    .education{background:#f2f1e8}.education .category-head{align-items:end}.education .category-head p{max-width:390px}
+    .education-card{background:transparent;border:0;box-shadow:none}.education-card .photo-frame{aspect-ratio:710 / 795;border-radius:3px;background:#d5d8cc;position:relative}
+    .education-card.collage .photo-frame{aspect-ratio:710 / 1170}
+    .education-card .photo-frame img{display:block;width:100%;height:auto;max-width:none;object-fit:initial;margin-top:-47.18%}
+    .education-card.collage .photo-frame img{margin-top:-11.27%}
+    .education-card:hover .photo-frame img{transform:scale(1.035);transform-origin:center 28%}
+    .education-card:hover{box-shadow:none}
+    .viewer-image-box.education-crop{display:block;overflow:hidden;width:min(calc((100dvh - 110px) * .893),calc(100% - 110px));aspect-ratio:710 / 795;max-height:100%;flex:none}
+    .viewer-image-box.education-crop.collage-crop{width:min(calc((100dvh - 110px) * .607),calc(100% - 110px));aspect-ratio:710 / 1170}
+    .viewer-image-box.education-crop img{display:block;width:100%;height:auto;max-width:none;max-height:none;object-fit:initial;margin-top:-47.18%}
+    .viewer-image-box.education-crop.collage-crop img{margin-top:-11.27%}
+    .site-ready .hero-copy>*{animation:riseIn .75s both}.site-ready .hero-copy>*:nth-child(2){animation-delay:.12s}.site-ready .hero-copy>*:nth-child(3){animation-delay:.24s}.site-ready .hero-copy>*:nth-child(4){animation-delay:.36s}
+    .site-ready .hero-image img{animation:heroArrive 1.5s ease-out both}
+    .motion-reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}.motion-reveal.in-view{opacity:1;transform:none}
+    .education .photo-card.reveal-ready{transition-delay:0s}.education .photo-card.reveal-ready.in-view:nth-child(2n){transition-delay:.1s}.education .photo-card.reveal-ready.in-view:nth-child(3n){transition-delay:.18s}
+    @keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    @keyframes heroArrive{from{opacity:.5;transform:scale(1.08)}to{opacity:1;transform:scale(1)}}
+    @media(prefers-reduced-motion:reduce){.motion-reveal{opacity:1;transform:none;transition:none}.site-ready .hero-copy>*,.site-ready .hero-image img{animation:none}.education .photo-card.reveal-ready.in-view{transition-delay:0s}}
+  </style>
+</head>
+<body>
+  <div class="typing-intro" id="typing-intro" aria-label="KC Naturalis. feito a mão com amor 💚">
+    <button class="intro-skip" type="button">Saltar intro</button>
+    <div class="typing-inner" aria-hidden="true"><p class="typing-name"><span id="typed-name"></span><span class="typing-cursor" id="name-cursor"></span></p><p class="typing-tagline"><span id="typed-tagline"></span><span class="typing-cursor is-hidden" id="tagline-cursor"></span></p></div>
+  </div>
+  <div class="strip">Plantas · Aromatizantes · Velas artesanais</div>
+  <header class="wrap nav"><a class="wordmark" href="#inicio" aria-label="KC Naturalis, início">KC <b>Naturalis</b></a><nav aria-label="Navegação"><a href="#plantas">Plantas</a><a href="#aromatizantes">Aromatizantes</a><a href="#velas">Velas e presentes</a><a href="#educacao">Educação e Natureza</a><a href="#contacto">Contacto</a></nav><a class="nav-contact" href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">Encomendar ↗</a></header>
+  <main id="inicio">
+    <section class="hero"><div class="hero-inner"><div class="hero-copy"><span class="small">KC Naturalis · Plantas &amp; velas artesanais</span><h1>Natureza para<br><em>sentir em casa.</em></h1><p>Plantas, aromas e presentes feitos para trazer vida e encanto ao seu espaço. Explore cada coleção.</p><a class="button" href="#plantas">Ver as coleções <span aria-hidden="true">↘</span></a></div><div class="hero-image"><img src="assets/plantas-limpas.png" alt="Cactos e suculentas da KC Naturalis" fetchpriority="high"><span class="image-note">Da página @kc_naturalis</span></div></div></section>
+    <div class="wrap category-nav" aria-label="Ir para uma coleção"><a href="#plantas">Plantas ↘</a><a href="#aromatizantes">Aromatizantes ↘</a><a href="#velas">Velas e presentes ↘</a><a href="#educacao">Educação e Natureza ↘</a></div>
+    <section class="category wrap" id="plantas"><div class="category-head"><div><span class="small">01 / Plantas</span><h2>Verde em <em>cada canto.</em></h2></div><p>Plantas e vasos para trazer um pouco mais de natureza para perto.</p></div><div class="photo-grid">
+      <article class="photo-card"><div class="photo-frame"><img src="assets/plantas-limpas.png" alt="Cactos e suculentas em vasos estampados" loading="lazy"></div><div class="photo-caption"><h3>Cactos e suculentas</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/espada-limpa.png" alt="Espadas-de-São-Jorge em vasos" loading="lazy"></div><div class="photo-caption"><h3>Espadas-de-São-Jorge</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/lavanda-limpa.png" alt="Lavanda no espaço KC Naturalis" loading="lazy"></div><div class="photo-caption"><h3>Plantas e aromas</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/moya-plantas-aromas-chas.jpeg" alt="Cartaz Plantas, Aromas e Chás, Moya Café com KC Naturalis, 26 de setembro" loading="lazy"></div><div class="photo-caption"><h3>Momentos com plantas</h3><p>Moya Café · 26 de setembro</p></div></article>
+    </div><div class="category-action"><a class="button" href="https://wa.me/258824412440?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20plantas%20da%20KC%20Naturalis." target="_blank" rel="noopener noreferrer">Perguntar sobre plantas ↗</a></div></section>
+    <section class="category alt" id="aromatizantes"><div class="wrap"><div class="category-head"><div><span class="small">02 / Aromatizantes</span><h2>Pequenos detalhes,<br><em>grandes sensações.</em></h2></div><p>Pastilhas aromáticas, peças suspensas e ideias para perfumar o dia a dia.</p></div><div class="photo-grid">
+      <article class="photo-card promo"><div class="photo-frame"><img src="assets/aromatizantes/apresentacao.jpeg" alt="Apresentação KC Naturalis das pastilhas aromáticas de cera vegetal e formas de uso" loading="lazy"></div><div class="photo-caption"><h3>Apresentação da coleção</h3><p>Pastilhas aromáticas de cera vegetal</p></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/flores.jpeg" alt="Duas pastilhas aromáticas com pétalas e especiarias" loading="lazy"></div><div class="photo-caption"><h3>Flores e especiarias</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/canela-laranja.jpeg" alt="Três pastilhas aromáticas com laranja e canela" loading="lazy"></div><div class="photo-caption"><h3>Laranja e canela</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/armario-detalhe.jpeg" alt="Pastilha aromática pendurada num cabide de roupa" loading="lazy"></div><div class="photo-caption"><h3>Para o armário</h3></div></article>
+      <article class="photo-card wide"><div class="photo-frame"><img src="assets/aromatizantes/cloches.jpeg" alt="Peças aromáticas sob cúpulas de vidro" loading="lazy"></div><div class="photo-caption"><h3>Peças sob cúpulas</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/mala.jpeg" alt="Pastilhas aromáticas guardadas na mala de viagem" loading="lazy"></div><div class="photo-caption"><h3>Em viagem</h3></div></article>
+      <article class="photo-card wide"><div class="photo-frame"><img src="assets/aromatizantes/armario.jpeg" alt="Pastilha aromática pendurada entre camisas" loading="lazy"></div><div class="photo-caption"><h3>Entre a roupa</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/notas-aromaticas.jpeg" alt="Ingredientes aromáticos com laranja, canela e frasco KC Naturalis" loading="lazy"></div><div class="photo-caption"><h3>Notas aromáticas</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromatizantes/pastilha-livros.jpeg" alt="Pastilha aromática suspensa junto de livros" loading="lazy"></div><div class="photo-caption"><h3>Um detalhe para a casa</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/pastilhas-limpas.png" alt="Pastilhas aromáticas artesanais da KC Naturalis" loading="lazy"></div><div class="photo-caption"><h3>Pastilhas artesanais</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/aromaticas-limpas.png" alt="Três peças aromáticas suspensas com flores" loading="lazy"></div><div class="photo-caption"><h3>Detalhes aromáticos</h3></div></article>
+    </div><div class="category-action"><a class="button" href="https://wa.me/258824412440?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20aromatizantes%20da%20KC%20Naturalis." target="_blank" rel="noopener noreferrer">Perguntar sobre aromatizantes ↗</a></div></div></section>
+    <section class="category wrap" id="velas"><div class="category-head"><div><span class="small">03 / Velas e presentes</span><h2>Feitos para <em>oferecer.</em></h2></div><p>Velas artesanais e composições com uma apresentação delicada.</p></div><div class="photo-grid">
+      <article class="photo-card"><div class="photo-frame"><img src="assets/presente-limpo.png" alt="Conjunto com vela artesanal KC Naturalis" loading="lazy"></div><div class="photo-caption"><h3>Vela artesanal</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/conjunto-limpo.png" alt="Conjunto de presente KC Naturalis junto de planta" loading="lazy"></div><div class="photo-caption"><h3>Conjunto para oferecer</h3></div></article>
+      <article class="photo-card"><div class="photo-frame"><img src="assets/marca-limpa.png" alt="Embalagem KC Naturalis junto de plantas" loading="lazy"></div><div class="photo-caption"><h3>Embalagem especial</h3></div></article>
+    </div><div class="category-action"><a class="button" href="https://wa.me/258824412440?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20velas%20e%20os%20presentes%20da%20KC%20Naturalis." target="_blank" rel="noopener noreferrer">Perguntar sobre presentes ↗</a></div></section>
+    <section class="category education" id="educacao"><div class="wrap"><div class="category-head"><div><span class="small">04 / Experiências</span><h2>Educação e <em>Natureza</em></h2></div><p>Momentos de aprendizagem, criatividade e partilha com as plantas.</p></div><div class="photo-grid" aria-label="Fotografias das experiências KC Naturalis">
+      <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8581.jpeg" alt="Participante a plantar alecrim num vaso artesanal" loading="lazy"></div></article>
+      <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8582.jpeg" alt="Participante a colocar terra e uma planta num vaso" loading="lazy"></div></article>
+      <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8583.jpeg" alt="Grupo a aprender a cuidar e plantar ervas aromáticas" loading="lazy"></div></article>
+      <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8584.jpeg" alt="Participantes reunidas à mesa a trabalhar com plantas" loading="lazy"></div></article>
+      <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8585.jpeg" alt="Vista da experiência de plantação em grupo" loading="lazy"></div></article>
+      <article class="photo-card education-card collage"><div class="photo-frame"><img src="assets/educacao/IMG_8586.jpeg" alt="Momentos de pintura e decoração de vasos com plantas" loading="lazy"></div></article>
+      <article class="photo-card education-card collage"><div class="photo-frame"><img src="assets/educacao/IMG_8587.jpeg" alt="Participantes a pintar vasos e a explorar a natureza" loading="lazy"></div></article>
+    </div></div></section>
+    <section class="story" id="sobre"><div class="story-inner"><div class="story-photo"><img src="assets/marca-limpa.png" alt="Embalagem KC Naturalis: plantas e velas artesanais" loading="lazy"></div><div class="story-text"><span class="small">KC Naturalis</span><h2>Com carinho,<br><em>em cada detalhe.</em></h2><p>Explore cada coleção e entre em contacto para saber quais artigos estão disponíveis.</p><a class="button light" href="https://www.instagram.com/kc_naturalis/" target="_blank" rel="noopener noreferrer">Ver o Instagram ↗</a></div></div></section>
+    <section class="wrap contact" id="contacto"><span class="small">Estamos à distância de uma mensagem</span><h2>Leve um pouco de<br><em>natureza consigo.</em></h2><p>Fale connosco para saber preços, disponibilidade e opções de encomenda.</p><div class="contact-links"><a class="button" href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">WhatsApp · 82 441 2440 ↗</a><a class="button outline" href="https://www.instagram.com/kc_naturalis/" target="_blank" rel="noopener noreferrer">Instagram @kc_naturalis ↗</a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div><div class="wordmark">KC <b>Naturalis</b></div><p>Plantas, aromatizantes e velas artesanais. Contacte-nos para confirmar produtos e disponibilidade.</p></div><div class="footer-links"><a href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">+258 82 441 2440</a><br><a href="https://www.instagram.com/kc_naturalis/" target="_blank" rel="noopener noreferrer">@kc_naturalis</a><br>© <span id="year">2026</span> KC Naturalis</div></div></footer>
+  <dialog class="viewer" aria-label="Fotografia ampliada"><div class="viewer-shell"><div class="viewer-top"><span class="viewer-title"></span><button class="viewer-close" type="button" aria-label="Fechar fotografia">Fechar ×</button></div><div class="viewer-stage"><button class="viewer-nav viewer-prev" type="button" aria-label="Fotografia anterior">‹</button><div class="viewer-image-box"><img alt=""></div><button class="viewer-nav viewer-next" type="button" aria-label="Fotografia seguinte">›</button></div><div class="viewer-bottom"><span class="viewer-count" aria-live="polite"></span><span class="viewer-count">Use as setas para navegar</span></div></div></dialog>
+  <script>
+    const typingIntro=document.getElementById('typing-intro');
+    const typedName=document.getElementById('typed-name');
+    const typedTagline=document.getElementById('typed-tagline');
+    let introFinished=false;
+    const introPause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+    function finishTypingIntro(){if(introFinished)return;introFinished=true;document.body.classList.add('site-ready');typingIntro.classList.add('is-leaving');setTimeout(()=>typingIntro.remove(),750)}
+    typingIntro.querySelector('.intro-skip').addEventListener('click',finishTypingIntro);
+    async function typeInto(node,word,delay){for(const letter of Array.from(word)){if(introFinished)return;node.textContent+=letter;await introPause(delay)}}
+    async function eraseFrom(node,delay){while(node.textContent){if(introFinished)return;node.textContent=Array.from(node.textContent).slice(0,-1).join('');await introPause(delay)}}
+    async function playTypingIntro(){
+      if(matchMedia('(prefers-reduced-motion: reduce)').matches||location.hash){finishTypingIntro();return}
+      await introPause(220);
+      await typeInto(typedName,'KC Naturalis',75);
+      if(introFinished)return;
+      await introPause(220);
+      if(introFinished)return;
+      document.getElementById('name-cursor').classList.add('is-hidden');
+      document.getElementById('tagline-cursor').classList.remove('is-hidden');
+      await typeInto(typedTagline,'feito a mão com amor 💚',48);
+      if(introFinished)return;
+      await introPause(850);
+      await eraseFrom(typedTagline,27);
+      if(introFinished)return;
+      document.getElementById('tagline-cursor').classList.add('is-hidden');
+      document.getElementById('name-cursor').classList.remove('is-hidden');
+      await eraseFrom(typedName,42);
+      await introPause(180);
+      finishTypingIntro();
+    }
+    playTypingIntro();
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const viewer=document.querySelector('.viewer');
+    const viewerImage=viewer.querySelector('img');
+    let activeCards=[],activeIndex=0,openingCard=null;
+    function showPhoto(index){
+      activeIndex=(index+activeCards.length)%activeCards.length;
+      const card=activeCards[activeIndex],img=card.querySelector('img');
+      viewer.querySelector('.viewer-image-box').className='viewer-image-box'+(card.classList.contains('education-card')?' education-crop':'')+(card.classList.contains('collage')?' collage-crop':'');
+      viewerImage.src=img.currentSrc||img.src;viewerImage.alt=img.alt;
+      viewer.querySelector('.viewer-title').textContent=card.querySelector('h3')?.textContent||img.alt;
+      viewer.querySelector('.viewer-bottom .viewer-count').textContent=`${activeIndex+1} / ${activeCards.length}`;
+    }
+    viewer.querySelector('.viewer-close').addEventListener('click',()=>viewer.close());
+    viewer.querySelector('.viewer-prev').addEventListener('click',()=>showPhoto(activeIndex-1));
+    viewer.querySelector('.viewer-next').addEventListener('click',()=>showPhoto(activeIndex+1));
+    viewer.addEventListener('click',event=>{if(event.target===viewer)viewer.close()});
+    viewer.addEventListener('close',()=>{viewerImage.removeAttribute('src');openingCard?.focus()});
+    viewer.addEventListener('keydown',event=>{if(event.key==='ArrowRight')showPhoto(activeIndex+1);if(event.key==='ArrowLeft')showPhoto(activeIndex-1)});
+    const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.category').forEach(section=>{
+      const grid=section.querySelector('.photo-grid'),cards=[...grid.querySelectorAll('.photo-card')];
+      const tools=document.createElement('div');tools.className='gallery-tools';
+      tools.innerHTML='<span class="gallery-hint">Deslize para explorar · Toque para ampliar</span><div class="gallery-actions"><button class="gallery-arrow previous" type="button" aria-label="Ver fotografias anteriores">‹</button><span class="gallery-count" aria-live="polite"></span><button class="gallery-arrow next" type="button" aria-label="Ver fotografias seguintes">›</button></div>';
+      grid.before(tools);
+      const previous=tools.querySelector('.previous'),next=tools.querySelector('.next'),count=tools.querySelector('.gallery-count');
+      function position(){const step=cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(grid).gap);const current=Math.min(cards.length,Math.max(1,Math.round(grid.scrollLeft/step)+1));count.textContent=`${current} / ${cards.length}`;previous.disabled=grid.scrollLeft<3;next.disabled=grid.scrollLeft+grid.clientWidth>=grid.scrollWidth-3}
+      previous.addEventListener('click',()=>grid.scrollBy({left:-grid.clientWidth*.83,behavior:reducedMotion?'instant':'smooth'}));
+      next.addEventListener('click',()=>grid.scrollBy({left:grid.clientWidth*.83,behavior:reducedMotion?'instant':'smooth'}));
+      grid.addEventListener('scroll',position,{passive:true});window.addEventListener('resize',position);position();
+      cards.forEach((card,index)=>{card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',`Ampliar: ${card.querySelector('img').alt}`);const open=()=>{activeCards=cards;openingCard=card;showPhoto(index);viewer.showModal()};card.addEventListener('click',open);card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();open()}})});
+    });
+    if('IntersectionObserver' in window&&!reducedMotion){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target)}}),{threshold:.08});
+      document.querySelectorAll('.photo-card').forEach(card=>{card.classList.add('reveal-ready');observer.observe(card)});
+      document.querySelectorAll('.category-head,.story-text,.contact').forEach(el=>{el.classList.add('motion-reveal');observer.observe(el)});
+    }
+  </script>
+</body>
+</html>
