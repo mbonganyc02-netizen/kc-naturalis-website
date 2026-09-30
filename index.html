@@ -38,14 +38,17 @@
     .typing-intro::before,.typing-intro::after{content:"";position:absolute;inset:-24%;z-index:-1;pointer-events:none;will-change:transform}
     .typing-intro::before{background:radial-gradient(ellipse 28% 36% at 22% 54%,rgba(81,126,86,.32),transparent 75%),radial-gradient(ellipse 32% 42% at 78% 28%,rgba(73,111,77,.24),transparent 72%),radial-gradient(ellipse 25% 31% at 68% 82%,rgba(156,126,66,.15),transparent 74%);filter:blur(30px);animation:ambientDrift 9s ease-in-out infinite alternate}
     .typing-intro::after{background:radial-gradient(ellipse 16% 22% at 37% 30%,rgba(185,159,92,.13),transparent 75%),radial-gradient(ellipse 20% 28% at 65% 65%,rgba(92,137,102,.2),transparent 75%);filter:blur(42px);animation:ambientDriftReverse 12s ease-in-out infinite alternate}
+    .intro-wash{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 50% 42%,#dce7cf 0%,#f8f5ed 72%);opacity:0;transform:scale(.96);transition:opacity 1s ease-in-out,transform 1s ease-in-out}
+    .typing-intro.is-blending .intro-wash{opacity:1;transform:scale(1.08)}
+    .typing-intro.is-blending .typing-inner,.typing-intro.is-blending .intro-skip{opacity:0;transform:translateY(-12px);pointer-events:none}
     .typing-intro.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
-    .typing-inner{position:relative;z-index:1;width:min(900px,calc(100% - 40px));padding:40px 0;text-shadow:0 2px 22px rgba(0,0,0,.25)}
+    .typing-inner{position:relative;z-index:1;width:min(900px,calc(100% - 40px));padding:40px 0;text-shadow:0 2px 22px rgba(0,0,0,.25);transition:opacity .4s ease,transform .65s ease}
     .typing-name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.7rem,10vw,8.5rem);line-height:1.1;letter-spacing:-.045em;min-height:1.12em;margin:0;white-space:nowrap}
     .typing-tagline{min-height:2.4em;margin:22px 0 0;font-size:clamp(.95rem,2vw,1.25rem);letter-spacing:.09em;color:#dce6d7}
     .typing-cursor{display:inline-block;width:2px;height:.8em;margin-left:5px;background:#d7bf8b;vertical-align:-.06em;animation:cursorBlink .7s step-end infinite}
     .typing-cursor.is-hidden{visibility:hidden}
     .typing-tagline .typing-cursor{height:1em;vertical-align:-.2em}
-    .intro-skip{position:absolute;z-index:2;right:clamp(18px,4vw,48px);top:clamp(18px,4vw,40px);background:transparent;border:1px solid #728172;border-radius:100px;padding:9px 17px;color:#dce6d7;font:600 .78rem 'DM Sans',Arial,sans-serif;cursor:pointer}.intro-skip:hover,.intro-skip:focus-visible{background:#dce6d7;color:#0b110c}
+    .intro-skip{position:absolute;z-index:2;right:clamp(18px,4vw,48px);top:clamp(18px,4vw,40px);background:transparent;border:1px solid #728172;border-radius:100px;padding:9px 17px;color:#dce6d7;font:600 .78rem 'DM Sans',Arial,sans-serif;cursor:pointer;transition:opacity .35s ease,transform .5s ease}.intro-skip:hover,.intro-skip:focus-visible{background:#dce6d7;color:#0b110c}
     @keyframes cursorBlink{50%{opacity:0}}
     @keyframes ambientDrift{from{transform:translate3d(-3%,-2%,0) scale(1) rotate(-4deg)}to{transform:translate3d(5%,4%,0) scale(1.15) rotate(5deg)}}
     @keyframes ambientDriftReverse{from{transform:translate3d(4%,3%,0) scale(1.08)}to{transform:translate3d(-5%,-4%,0) scale(.94)}}
@@ -97,6 +100,7 @@
 <body>
   <div class="typing-intro" id="typing-intro" aria-label="KC Naturalis. feito a mão com amor 💚">
     <button class="intro-skip" type="button">Saltar intro</button>
+    <span class="intro-wash" aria-hidden="true"></span>
     <div class="typing-inner" aria-hidden="true"><p class="typing-name"><span id="typed-name"></span><span class="typing-cursor" id="name-cursor"></span></p><p class="typing-tagline"><span id="typed-tagline"></span><span class="typing-cursor is-hidden" id="tagline-cursor"></span></p></div>
   </div>
   <div class="page-ambient" aria-hidden="true">
@@ -107,10 +111,10 @@
     <svg class="ambient-sprig four" viewBox="0 0 220 340"><path d="M104 326C136 240 150 142 114 11M123 272C71 256 54 231 29 186c52 4 79 30 94 86ZM135 215c44-45 58-78 56-125-41 21-57 59-56 125ZM133 170C91 153 64 118 54 69c48 14 69 48 79 101ZM118 91c25-30 28-54 20-83-21 17-25 42-20 83Z"/></svg>
   </div>
   <div class="strip">Plantas · Aromatizantes · Velas artesanais</div>
-  <header class="wrap nav"><a class="wordmark" href="#inicio" aria-label="KC Naturalis, início">KC <b>Naturalis</b></a><nav aria-label="Navegação"><a href="#plantas">Plantas</a><a href="#aromatizantes">Aromatizantes</a><a href="#velas">Velas e presentes</a><a href="#educacao">Educação e Natureza</a><a href="#contacto">Contacto</a></nav><a class="nav-contact" href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">Encomendar ↗</a></header>
+  <header class="wrap nav"><a class="wordmark" href="#inicio" aria-label="KC Naturalis, início">KC <b>Naturalis</b></a><nav aria-label="Navegação"><a href="#plantas">Plantas</a><a href="#aromatizantes">Aromatizantes</a><a href="#velas">Velas e presentes</a><a href="#natureza">Natureza</a><a href="#contacto">Contacto</a></nav><a class="nav-contact" href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">Encomendar ↗</a></header>
   <main id="inicio">
     <section class="hero"><div class="hero-inner"><div class="hero-copy"><span class="small">KC Naturalis · Plantas &amp; velas artesanais</span><h1>Natureza para<br><em>sentir em casa.</em></h1><p>Plantas, aromas e presentes feitos para trazer vida e encanto ao seu espaço. Explore cada coleção.</p><a class="button" href="#plantas">Ver as coleções <span aria-hidden="true">↘</span></a></div><div class="hero-image"><img src="assets/plantas-limpas.png" alt="Cactos e suculentas da KC Naturalis" fetchpriority="high"><span class="image-note">Da página @kc_naturalis</span></div></div></section>
-    <div class="wrap category-nav" aria-label="Ir para uma coleção"><a href="#plantas">Plantas ↘</a><a href="#aromatizantes">Aromatizantes ↘</a><a href="#velas">Velas e presentes ↘</a><a href="#educacao">Educação e Natureza ↘</a></div>
+    <div class="wrap category-nav" aria-label="Ir para uma coleção"><a href="#plantas">Plantas ↘</a><a href="#aromatizantes">Aromatizantes ↘</a><a href="#velas">Velas e presentes ↘</a><a href="#natureza">Natureza ↘</a></div>
     <section class="category wrap" id="plantas"><div class="category-head"><div><span class="small">01 / Plantas</span><h2>Verde em <em>cada canto.</em></h2></div><p>Plantas e vasos para trazer um pouco mais de natureza para perto.</p></div><div class="photo-grid">
       <article class="photo-card"><div class="photo-frame"><img src="assets/plantas-limpas.png" alt="Cactos e suculentas em vasos estampados" loading="lazy"></div><div class="photo-caption"><h3>Cactos e suculentas</h3></div></article>
       <article class="photo-card"><div class="photo-frame"><img src="assets/espada-limpa.png" alt="Espadas-de-São-Jorge em vasos" loading="lazy"></div><div class="photo-caption"><h3>Espadas-de-São-Jorge</h3></div></article>
@@ -135,7 +139,7 @@
       <article class="photo-card"><div class="photo-frame"><img src="assets/conjunto-limpo.png" alt="Conjunto de presente KC Naturalis junto de planta" loading="lazy"></div><div class="photo-caption"><h3>Conjunto para oferecer</h3></div></article>
       <article class="photo-card"><div class="photo-frame"><img src="assets/marca-limpa.png" alt="Embalagem KC Naturalis junto de plantas" loading="lazy"></div><div class="photo-caption"><h3>Embalagem especial</h3></div></article>
     </div><div class="category-action"><a class="button" href="https://wa.me/258824412440?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20velas%20e%20os%20presentes%20da%20KC%20Naturalis." target="_blank" rel="noopener noreferrer">Perguntar sobre presentes ↗</a></div></section>
-    <section class="category education" id="educacao"><div class="wrap"><div class="category-head"><div><span class="small">04 / Experiências</span><h2>Educação e <em>Natureza</em></h2></div><p>Momentos de aprendizagem, criatividade e partilha com as plantas.</p></div><div class="photo-grid" aria-label="Fotografias das experiências KC Naturalis">
+    <section class="category education" id="natureza"><div class="wrap"><div class="category-head"><div><span class="small">04 / Experiências</span><h2><em>Natureza</em></h2></div><p>Momentos de aprendizagem, criatividade e partilha com as plantas.</p></div><div class="photo-grid" aria-label="Fotografias das experiências KC Naturalis">
       <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8581.jpeg" alt="Participante a plantar alecrim num vaso artesanal" loading="lazy"></div></article>
       <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8582.jpeg" alt="Participante a colocar terra e uma planta num vaso" loading="lazy"></div></article>
       <article class="photo-card education-card"><div class="photo-frame"><img src="assets/educacao/IMG_8583.jpeg" alt="Grupo a aprender a cuidar e plantar ervas aromáticas" loading="lazy"></div></article>
@@ -155,7 +159,14 @@
     const typedTagline=document.getElementById('typed-tagline');
     let introFinished=false;
     const introPause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-    function finishTypingIntro(){if(introFinished)return;introFinished=true;document.body.classList.add('site-ready');typingIntro.classList.add('is-leaving');setTimeout(()=>typingIntro.remove(),750)}
+    function finishTypingIntro(){
+      if(introFinished)return;
+      introFinished=true;
+      document.body.classList.add('site-ready');
+      if(matchMedia('(prefers-reduced-motion: reduce)').matches||location.hash){typingIntro.remove();return}
+      typingIntro.classList.add('is-blending');
+      setTimeout(()=>{typingIntro.classList.add('is-leaving');setTimeout(()=>typingIntro.remove(),850)},1000);
+    }
     typingIntro.querySelector('.intro-skip').addEventListener('click',finishTypingIntro);
     async function typeInto(node,word,delay){for(const letter of Array.from(word)){if(introFinished)return;node.textContent+=letter;await introPause(delay)}}
     async function eraseFrom(node,delay){while(node.textContent){if(introFinished)return;node.textContent=Array.from(node.textContent).slice(0,-1).join('');await introPause(delay)}}
