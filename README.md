@@ -1,2 +1,2 @@
 # kc-naturalis-website
-Website da KC Naturalis — plantas, aromas, velas e Educação e Natureza.
+Website da KC Naturalis — plantas, aromas, velas e Natureza.
