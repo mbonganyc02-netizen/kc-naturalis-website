@@ -70,12 +70,38 @@
     @keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
     @keyframes heroArrive{from{opacity:.5;transform:scale(1.08)}to{opacity:1;transform:scale(1)}}
     @media(prefers-reduced-motion:reduce){.motion-reveal{opacity:1;transform:none;transition:none}.site-ready .hero-copy>*,.site-ready .hero-image img{animation:none}.education .photo-card.reveal-ready.in-view{transition-delay:0s}}
+    /* Quiet botanical motion stays behind the content throughout the page. */
+    .page-ambient{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;isolation:isolate}
+    .page-ambient .ambient-glow{position:absolute;width:min(68vw,850px);aspect-ratio:1;border-radius:50%;filter:blur(34px);opacity:.54;will-change:transform}
+    .ambient-glow.one{top:-27%;left:-23%;background:radial-gradient(circle,rgba(153,175,126,.27),rgba(153,175,126,0) 68%);animation:pageDriftOne 24s ease-in-out infinite alternate}
+    .ambient-glow.two{top:32%;right:-34%;background:radial-gradient(circle,rgba(181,154,108,.24),rgba(181,154,108,0) 70%);animation:pageDriftTwo 29s ease-in-out infinite alternate}
+    .ambient-glow.three{bottom:-38%;left:13%;background:radial-gradient(circle,rgba(111,151,119,.25),rgba(111,151,119,0) 69%);animation:pageDriftThree 26s ease-in-out infinite alternate}
+    .ambient-sprig{position:absolute;width:clamp(135px,17vw,270px);height:auto;fill:none;stroke:#7c956f;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round;opacity:.19;will-change:transform}
+    .ambient-sprig.one{top:12%;left:-36px;transform:rotate(-16deg);animation:sprigFloatOne 20s ease-in-out infinite alternate}
+    .ambient-sprig.two{top:53%;right:-55px;transform:rotate(148deg);animation:sprigFloatTwo 23s ease-in-out infinite alternate}
+    .ambient-sprig.three{bottom:2%;left:13%;width:clamp(105px,12vw,190px);transform:rotate(38deg);animation:sprigFloatThree 25s ease-in-out infinite alternate}
+    body>header,body>main,body>footer,body>.strip{position:relative;z-index:1}
+    .category.alt{background:rgba(236,237,227,.88)}.education{background:rgba(242,241,232,.88)}.story{background:rgba(232,234,223,.9)}
+    @keyframes pageDriftOne{to{transform:translate3d(18vw,13vh,0) scale(1.24)}}
+    @keyframes pageDriftTwo{to{transform:translate3d(-18vw,-18vh,0) scale(1.18)}}
+    @keyframes pageDriftThree{to{transform:translate3d(15vw,-18vh,0) scale(1.28)}}
+    @keyframes sprigFloatOne{to{transform:translate3d(35px,46px,0) rotate(-7deg)}}
+    @keyframes sprigFloatTwo{to{transform:translate3d(-44px,-35px,0) rotate(161deg)}}
+    @keyframes sprigFloatThree{to{transform:translate3d(46px,-26px,0) rotate(51deg)}}
+    @media(max-width:700px){.ambient-sprig{opacity:.14}.ambient-glow.one{left:-55%}.ambient-glow.two{right:-60%}.ambient-sprig.three{left:8%}}
+    @media(prefers-reduced-motion:reduce){.ambient-glow,.ambient-sprig{animation:none!important;will-change:auto}}
   </style>
 </head>
 <body>
   <div class="typing-intro" id="typing-intro" aria-label="KC Naturalis. feito a mão com amor 💚">
     <button class="intro-skip" type="button">Saltar intro</button>
     <div class="typing-inner" aria-hidden="true"><p class="typing-name"><span id="typed-name"></span><span class="typing-cursor" id="name-cursor"></span></p><p class="typing-tagline"><span id="typed-tagline"></span><span class="typing-cursor is-hidden" id="tagline-cursor"></span></p></div>
+  </div>
+  <div class="page-ambient" aria-hidden="true">
+    <span class="ambient-glow one"></span><span class="ambient-glow two"></span><span class="ambient-glow three"></span>
+    <svg class="ambient-sprig one" viewBox="0 0 220 340"><path d="M104 326C136 240 150 142 114 11M123 272C71 256 54 231 29 186c52 4 79 30 94 86ZM135 215c44-45 58-78 56-125-41 21-57 59-56 125ZM133 170C91 153 64 118 54 69c48 14 69 48 79 101ZM118 91c25-30 28-54 20-83-21 17-25 42-20 83Z"/></svg>
+    <svg class="ambient-sprig two" viewBox="0 0 220 340"><path d="M104 326C136 240 150 142 114 11M123 272C71 256 54 231 29 186c52 4 79 30 94 86ZM135 215c44-45 58-78 56-125-41 21-57 59-56 125ZM133 170C91 153 64 118 54 69c48 14 69 48 79 101ZM118 91c25-30 28-54 20-83-21 17-25 42-20 83Z"/></svg>
+    <svg class="ambient-sprig three" viewBox="0 0 220 340"><path d="M104 326C136 240 150 142 114 11M123 272C71 256 54 231 29 186c52 4 79 30 94 86ZM135 215c44-45 58-78 56-125-41 21-57 59-56 125ZM133 170C91 153 64 118 54 69c48 14 69 48 79 101ZM118 91c25-30 28-54 20-83-21 17-25 42-20 83Z"/></svg>
   </div>
   <div class="strip">Plantas · Aromatizantes · Velas artesanais</div>
   <header class="wrap nav"><a class="wordmark" href="#inicio" aria-label="KC Naturalis, início">KC <b>Naturalis</b></a><nav aria-label="Navegação"><a href="#plantas">Plantas</a><a href="#aromatizantes">Aromatizantes</a><a href="#velas">Velas e presentes</a><a href="#educacao">Educação e Natureza</a><a href="#contacto">Contacto</a></nav><a class="nav-contact" href="https://wa.me/258824412440" target="_blank" rel="noopener noreferrer">Encomendar ↗</a></header>
